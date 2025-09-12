@@ -1,0 +1,707 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    font-family: "Roboto",sans-serif;
+   
+    width: 100%;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 50px;
+   z-index: 100;
+    
+
+}
+
+.logo{
+    margin: 0px 100px ;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Ubuntu",sans-serif;
+
+}
+
+.social-icons img{
+
+    height: 24px;
+    width: 24px;
+    margin: 2px;
+
+
+}
+
+.social-icons{
+    margin-left: 20px;
+    display: flex;
+
+}
+.logo span{
+    color: orange;
+    font-family: "CossetteTitre";
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 100px;
+}
+
+nav ul li a{
+    color: black;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease;
+
+}
+
+nav ul li a:hover{
+    transform: translateY(-2px);
+    color: orange;
+    filter: drop-shadow(2px 3px 3px rgba(247, 200, 200, 0.863));
+}
+
+
+.search input{
+    border: 2px solid  rgba(195, 193, 193, 0.396);
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin:10px 100px;
+    width: 250px;
+    filter: drop-shadow(2px 5px 6px rgba(146, 146, 145, 0.365));
+    
+
+
+}
+
+header{
+   
+  background-image: url(header-img.png);
+   background-position: center;
+   background-size: cover;
+   background-size: 100%;
+ 
+  
+   
+    height:90vh;
+    
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.txt{
+  
+}
+
+.txt h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 80px;
+    width: 55%;
+    line-height: 70px;
+}
+
+header p{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    color: white;
+    margin-left: -1px;
+}
+
+header button{
+    padding: 15px 30px;
+    background-color: rgb(157, 65, 65);
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    font-weight: 600;
+
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.339);
+    transition: all .3s ease;
+    cursor: pointer;
+
+
+}
+
+header button:hover{
+     background-color: rgb(220, 0, 0);
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.608);
+    transform: scale(1.02);
+    
+}
+
+.about-us{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px 40px;
+}
+
+.about-text{
+    margin-left: 50px;
+    width: 40%;
+}
+
+.about-text h5{
+    cursor: pointer;
+    position: relative;
+    font-family: sans-serif;
+    font-size:30px;
+   
+    color: rgb(180, 118, 2);
+}
+
+.about-text h5::before{
+    position: absolute;
+    transition: width .3s ease;
+    height: 3px;
+    width: 0;
+    
+    bottom: 0;
+
+    left: 0;
+    background-color: orange;
+    content: " ";
+    
+}
+
+.about-text h5:hover::before{
+    width: 40%;
+}
+
+
+
+.about-text h2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    margin-left: -1px;
+    margin-top: -2px;
+}
+
+.about-text p{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(82, 82, 82);
+    margin-top: 20px;  
+}
+
+.about-read{
+    padding: 15px 35px;
+    background-color: orange;
+    font-size: 20px ;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 30px;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.339);
+    transition: all .3s ease;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.about-read:hover{
+     box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.608);
+    transform: scale(1.02);
+     background-color: rgb(205, 134, 3);
+
+}
+
+.about-img{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+.im1, .im2{
+    height: 500px;
+    background-color: black;
+    width: 300px;
+    margin-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.34);
+    transition: all .3s ease;
+    overflow: hidden;
+    
+}
+
+.im1:hover{
+    transform: translateX(-4px);
+    cursor: pointer;
+    box-shadow: 2px 5px 6px #000000cc;
+    filter: brightness(120%);
+}
+
+
+
+.im2:hover{
+    
+    transform: translateX(4px);
+    cursor: pointer;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.8);
+    filter: brightness(120%);
+}
+
+.im1{
+    background-image: url(abt-img1.png);
+   
+    margin-top: -20px;
+}
+
+.im2{
+    background-image: url(abt-img2.png);
+    
+}
+
+.service{
+   
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.service h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    margin-top: -4px;
+
+}
+
+.service h5{
+    cursor: pointer;
+    position: relative;
+    font-family: sans-serif;
+    font-size:30px;
+    margin-bottom: 5px;
+    color: orange;
+}
+
+.service h5::before{
+    position: absolute;
+    transition: width .3s ease;
+    height: 3px;
+    width: 0;
+    
+    bottom: 0;
+
+    left: 0;
+    background-color: orange;
+    content: " ";
+    
+}
+
+.service h5:hover::before{
+    width: 20%;
+}
+
+.service h5, h2{
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+
+.service-p{
+    width: 400px;
+    margin: 10px 80px;
+    font-family: sans-serif;
+    color: grey;
+    font-size: 14px;
+    
+}
+.dest-cards-list{
+    display: flex;
+   
+    height: 400px;
+    
+    justify-content: center;
+}
+
+.dest-cards{
+   transition: all .3s ease;
+   cursor: pointer;
+    margin: 20px 20px;
+    width: 20%;
+    height: 350px;
+    display: flex;
+    
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(86, 86, 86, 0.453);
+}
+.dest-img img{
+   
+    width: 100%;
+    height: 200px;
+}
+
+.dest-cards h2{
+    font-size: 30px;
+    margin-top: 18px;
+}
+.dest-cards h2, p{
+    margin-left: 20px;
+    font-family: "Ubuntu",sans-serif;
+}
+.dest-cards:hover{
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 6px rgba(86, 86, 86, 0.704);
+    filter: brightness(120%);
+
+}
+.dest-visit{
+    width: 40%;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(41, 139, 244);
+    background: linear-gradient(135deg, rgb(187, 187, 254), rgb(0, 0, 97));
+    font-size: 20px;
+    box-shadow: 2px 3px 4px rgb(80, 99, 159);
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+    margin: 10px 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+
+.dest-visit:hover{
+    width: 150px;
+    background: linear-gradient(135deg, rgb(84, 84, 112), rgb(0, 0, 97));
+    box-shadow: 2px 3px 4px rgb(66, 81, 131);
+}
+
+.dest-visit:active{
+    transform: scale(.9);
+    background-color: black;
+
+}
+
+.our-blogs{
+    display: flex;
+    padding: 50px;
+
+}
+  
+.blog-heading{
+    width: 60%;
+}
+.blog-section {
+    margin-left: 100px;
+    width: 100%;
+   
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding: 20px 30px;
+    
+    
+}
+
+.blog{
+    background-color: red;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px 10px;
+    
+
+}
+
+.blog-heading{
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+
+.blog-heading h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: orange;
+    font-family: "Ubuntu",sans-serif;
+
+}
+
+.read-blogs{
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.386);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.read-blogs:hover{
+    background-color: rgb(215, 140, 2);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.562);
+    transform: scale(1.02);
+}
+.read-blogs:active{
+    transform: scale(.9);
+}
+
+.blog-heading p{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 400;
+
+    margin-left: -1px;
+}
+.blog h1{
+    color: white;
+    font-weight: 600;
+    color: orange;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+
+.blog p{
+    color: white;
+    font-size: 14px;
+    
+
+}
+    
+.blog-card1 {
+    background-image: url(mixoram-bl.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 400px;
+    grid-row: span 5 / span 5;
+}
+.blog::before{
+    content: " ";
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+  filter: brightness(50%);
+   z-index: 1;
+    position: absolute;
+    background:inherit;
+}
+
+.blog *{
+    position: relative;
+    z-index: 2;
+}
+.blog-card2 {
+     background-image: url(thai--island.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 300px;
+    grid-row: span 2 / span 2;
+}
+
+.blog-card3 { background-image: url(londo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.blog-card4 {
+     background-image: url(phuket.jpeg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+
+
+.newsletter{
+    background-color: rgba(0, 0, 0, 0.347);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 20px;
+   
+
+}
+
+.news-text h2{
+    font-size: 2rem;
+    color: rgb(255, 254, 252);
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.newsletter p{
+    color: rgb(216, 215, 215);
+    font-size: 14px;
+}
+.newsletter input{
+    padding: 15px 25px;
+
+    width: 400px;
+    border-top-left-radius: 0px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.newsletter button{
+
+    padding: 15px 25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(255, 85, 0);
+    color: white;
+   border: none;
+   outline: none;
+   font-weight: 600;
+   font-size: 16px;
+   margin-left: -5px;
+   transition: all .3s ease;
+
+}
+
+.newsletter button:hover{
+    cursor: pointer;
+   background-color: rgb(212, 71, 1);
+}
+
+footer{
+    background-color: rgb(0, 0, 65);
+    height: 60vh;
+    padding: 0px 20px;
+   
+}
+.footer-elements{
+     padding: 80px 100px;
+    display: flex;
+}
+.footer-logo{
+    color: white;
+    margin-top: 80px;
+
+}
+.address{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: -1px;
+    line-height: 25px;
+}
+
+.footer-nav{
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+
+}
+.footer-nav h2{
+    margin-left: -5px;
+    font-size: 30px;
+    font-family: sans-serif;
+
+}
+.footer-nav ul{
+    list-style: none;
+
+}
+
+.footer-nav ul li{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    
+}
+
+
+.footer-list{
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+
+}
+.footer-list h2{
+    cursor: pointer;
+    position: relative;
+    margin-left: -5px;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: underline;
+
+}
+.footer-list ul{
+    list-style: none;
+
+}
+
+.footer-list ul li{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    
+}
+
+.footer-elements h2{
+    text-decoration: underline;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    color: orange;
+}
+
+
+.footer-elements h2{
+    color: white;
+
+}
+
+
+
