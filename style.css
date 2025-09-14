@@ -3,7 +3,7 @@
 }
 header{
    
-  background-image: url(./homepage-images/headerImg.jpg);
+  background-image: url(../HomePage/homepage-images/headerImg.jpg);
    background-position: center;
    background-size: cover;
    background-size: 100%;
@@ -242,13 +242,13 @@ header p{
 }
 
 .im1{
-    background-image: url(./homepage-images/abt-img1.png);
+    background-image: url(../HomePage/homepage-images/abt-img1.png);
    
     margin-top: -20px;
 }
 
 .im2{
-    background-image: url(./homepage-images/abt-img2.png);
+    background-image: url(../HomePage/homepage-images/abt-img2.png);
     
 }
 
@@ -542,7 +542,7 @@ html{
 }
     
 .blog-card1 {
-    background-image: url(./homepage-images/mixoram-bl.jpeg);
+    background-image: url(../HomePage/homepage-images/mixoram-bl.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -568,7 +568,7 @@ html{
     z-index: 2;
 }
 .blog-card2 {
-     background-image: url(./homepage-images/thai--island.jpeg);
+     background-image: url(../HomePage/homepage-images/thai--island.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -577,7 +577,7 @@ html{
     grid-row: span 2 / span 2;
 }
 
-.blog-card3 { background-image: url(./homepage-images/londo.jpeg);
+.blog-card3 { background-image: url(../HomePage/homepage-images/londo.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -587,7 +587,7 @@ html{
 }
 
 .blog-card4 {
-     background-image: url(./homepage-images/phuket.jpeg);
+     background-image: url(../HomePage/homepage-images/phuket.jpeg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
