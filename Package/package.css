@@ -1,0 +1,218 @@
+header{
+    background-image: url(pricing-header.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+header::before{
+    content: " ";
+    position: absolute;
+    background: rgba(1, 79, 162, 0.867);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+header *{
+    position: relative;
+    z-index: 2;
+}
+
+header h1{
+    font-size: 3rem;
+    font-family: "Ubuntu",sans-serif;
+
+}
+
+header p a{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-right: 6px;
+    margin-top: 10px;
+    color: grey;
+    text-decoration: none;
+}
+
+.pricing-section{
+    
+    margin: 40px;
+    height: 80vh;
+    display: flex;
+    max-height: fit-content;
+}
+
+
+.pricing-list{
+    max-height: fit-content;
+   
+    margin: 20px 30px;
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+
+}
+
+.pricing-card{
+    border: 2px solid rgb(147, 147, 255);
+ 
+    min-height: 100%;
+    height: max-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 33%;
+    border-radius: 20px;
+    margin-right: 30px;
+    max-height: fit-content;
+    padding: 10px 18px;
+}
+
+.pricing-card img{
+    height: 50%;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+.pricing-card h1{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+}
+
+.pricing-card h3{
+     font-family: 'Montserrat', sans-serif;
+     margin-left: 20px;
+}
+
+.pricing-card ul{
+    margin: 10px 20px;
+    list-style: none;
+
+}
+
+.pricing-card ul li{
+    font-family: "Poppins";
+    font-size: 14px;
+   color: green;
+   font-weight: 550;
+   margin-top: 5px;
+}
+
+.pricing-card ul li::before{
+    content: "---";
+    background-color: green;
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin-right: 5px;
+  
+}
+
+.pricing-card p{
+    font-family: "Poppins";
+    color: grey;
+    font-size: 14px;
+    margin: 15px 20px;
+}
+
+.book-now{
+    padding: 10px ;
+    
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px 20px;
+
+}
+
+.explore{
+    margin-top: 100px;
+    background-image: url(pricing-header.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.explore::before{
+    content: " ";
+    position: absolute;
+    background: rgba(1, 79, 162, 0.867);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.explore *{
+    position: relative;
+    z-index: 2;
+}
+
+.explore-btn{
+
+    padding: 10px 30px ;
+
+    
+    border-radius: 8px;
+
+    background-color: orange;
+    
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+
+.explore h1{
+    font-family: "Roboto",sans-serif;
+    margin-top: 10px;
+    font-size: 3rem;
+
+}
+
+.explore h2{
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    margin-bottom: -10px;
+    color: orange;
+
+}
+
+.explore p{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    width: 20%;
+    text-align: center;
+
+
+}

@@ -1,142 +1,9 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-nav {
-    position: sticky;
-    top: 0;
-    font-family: "Roboto", sans-serif;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    height: 50px;
-    
-    z-index: 100;
-    box-sizing: border-box;
-    justify-content: center;
-}
-
-.logo{
-    margin: 0px 100px ;
-    font-size: 40px;
-    font-weight: 600;
-    font-family: "Ubuntu",sans-serif;
-
-}
-
 .social-icons img{
-
     height: 24px;
-    margin: 5px;
-    width: 24px;
-    margin-top: 10px;
-    margin-left: -1px;
-
-    
-    filter: invert();
-
-
-
 }
-.social-icons img:hover{
-    cursor: pointer;
-}
-
-.social-icons{
-    
-    display: flex;
-
-}
-.logo span{
-    color: orange;
-    font-family: "CossetteTitre";
-
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 10px 10px;
-    transition: 0.5s;
-}
-
-nav ul li a {
-    display: block;
-    position: relative;
-    text-decoration: none;
-    padding: 5px 10px;
-    
-    font-size: 15px;
-    font-family: sans-serif;
-    color: black;
-    text-transform: uppercase;
-    transition: 0.5s;
-    
-}
-
-nav ul:hover li a {
-    transform: scale(1.02);
-    opacity: 0.2;
-    filter: blur(0px);
-}
-
-nav ul li a:hover {
-    transform: scale(1.4);
-    opacity: 1;
-    filter: blur(0);
-    color: #fff;
-}
-
-nav ul li a:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    background: orange;
-   
-    transition: 0.5s;
-    transform-origin: right;
-    transform: scaleX(0);
-    z-index: -1;
-}
-
-nav ul li a:hover:before {
-     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.371);
-    transition: transform 0.5s;
-    text-transform: lowercase;
-    transform-origin: left;
-    transform: scaleX(1);
-   
-}
-
-.search input{
-    border: 2px solid  rgba(195, 193, 193, 0.396);
-    outline: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    font-size: 15px;
-    margin:10px 100px;
-    width: 250px;
-    filter: drop-shadow(2px 5px 6px rgba(146, 146, 145, 0.365));
-    
-
-
-}
-
 header{
    
-  background-image: url(header-img.png);
+  background-image: url(./homepage-images/header-img.png);
    background-position: center;
    background-size: cover;
    background-size: 100%;
@@ -259,41 +126,6 @@ header button:hover{
     margin-top: 20px;  
 }
 
-.about-read{
-    z-index: 2;
-    padding: 10px 30px;
-    position: relative;
-    overflow: hidden;
-    background-color: orange;
-    font-size: 20px ;
-    border: none;
-    outline: none;
-    color: white;
-    margin-top: 30px;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.339);
-    transition: all .3s ease;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.about-read::before{
-    content: " ";
-    top: 0;
-    bottom: 0;
-    transition: width .3s ease;
-    height: 100%;
-    width: 0;
-    left: 0;
-
-    position: absolute;
-      background: linear-gradient(145deg, rgb(255, 186, 58),rgb(252, 109, 109),rgb(192, 192, 0));
-    z-index: -1;
-
-}
-
-.about-read:hover::before{
-    width: 100%;
-}
 
 
 .about-img{
@@ -324,7 +156,107 @@ header button:hover{
 }
 
 
+.hotels-section{
+   
+}
 
+.hotels-list{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.hotels-cards h6{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+
+}
+.hotels-cards h3{
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    
+    font-size: 20px;
+
+}
+
+.hotels-cards p{
+    font-size: 14px;
+    color: grey;
+    margin-left: -1px;
+}
+
+.hotels-cards h5{
+    font-family: sans-serif;
+    font-weight: 450;
+
+    margin: 5px 0px;
+
+    font-size: 20px;
+    color: black;
+}
+
+
+.hotel{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+.hotels-cards{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 10px 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.186);
+
+   border: 2px solid rgba(128, 128, 128, 0.156);
+    margin: 10px 30px;
+    border-radius: 18px;
+    transition: all .3s ease;
+    cursor: pointer;
+
+}
+.hotels-cards:hover{
+    transform: translateY(-4px);
+     border: 2px solid rgba(128, 128, 128, 0.487);
+    scale: 1.2;
+    transform: rotate(2deg);
+    z-index: 3;
+}
+
+.our-hotels{
+    font-family: sans-serif;
+    margin: 80px 0px 10px 100px;
+    color: orange;  
+}
+.hotels-p{
+    color: grey;
+   
+   margin-left: 100px;
+   width: 500px;
+   font-size: 14px;
+   margin-bottom:50px;
+}
+
+
+
+.hotels-cards img{
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.hotels-cards img:hover{
+    filter: brightness(150%);
+}
 .im2:hover{
     
     transform: translateX(4px);
@@ -334,13 +266,13 @@ header button:hover{
 }
 
 .im1{
-    background-image: url(abt-img1.png);
+    background-image: url(./homepage-images/abt-img1.png);
    
     margin-top: -20px;
 }
 
 .im2{
-    background-image: url(abt-img2.png);
+    background-image: url(./homepage-images/abt-img2.png);
     
 }
 
@@ -366,6 +298,11 @@ header button:hover{
     margin-bottom: 5px;
     color: orange;
 }
+
+
+
+
+
 
 .service h5::before{
     position: absolute;
@@ -441,7 +378,10 @@ header button:hover{
 }
 .dest-img img{
    
-    width: 100%;
+    width: 95%;
+    border-radius: 20px;
+    margin: 4px 8px;
+  
     height: 200px;
 }
 
@@ -482,13 +422,16 @@ header button:hover{
 
 .dest-visit:hover{
     width: 150px;
-    background: linear-gradient(135deg, rgb(84, 84, 112), rgb(0, 0, 97));
+    background: transparent;
+    border: 2px solid blue;
+    color: black;
     box-shadow: 2px 3px 4px rgb(66, 81, 131);
 }
 
 .dest-visit:active{
     transform: scale(.9);
     background-color: black;
+    color: white;
 
 }
 
@@ -619,7 +562,7 @@ header button:hover{
 }
     
 .blog-card1 {
-    background-image: url(mixoram-bl.jpeg);
+    background-image: url(./homepage-images/mixoram-bl.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -645,7 +588,7 @@ header button:hover{
     z-index: 2;
 }
 .blog-card2 {
-     background-image: url(thai--island.jpeg);
+     background-image: url(./homepage-images/thai--island.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -654,7 +597,7 @@ header button:hover{
     grid-row: span 2 / span 2;
 }
 
-.blog-card3 { background-image: url(londo.jpeg);
+.blog-card3 { background-image: url(./homepage-images/londo.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -664,7 +607,7 @@ header button:hover{
 }
 
 .blog-card4 {
-     background-image: url(phuket.jpeg);
+     background-image: url(./homepage-images/phuket.jpeg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -827,7 +770,7 @@ footer{
 .why-us-heading{
     margin-top: 100px;
     display: block;
-    margin-left: 43%;
+    margin-left: 100px;
     font-size: 40px;
     font-family: "Ubuntu",sans-serif;
     color: orange;
@@ -836,8 +779,8 @@ footer{
 }
 .why-us-para{
     width: 500px;
-    text-align: center;
-    margin-left: 560px;
+    
+    margin-left:100px;
     margin-top: 14px;
     font-size: 14px;
     color: grey;
