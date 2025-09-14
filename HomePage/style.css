@@ -3,7 +3,7 @@
 }
 header{
    
-  background-image: url(./homepage-images/header-img.png);
+  background-image: url(./homepage-images/headerImg.jpg);
    background-position: center;
    background-size: cover;
    background-size: 100%;
@@ -43,31 +43,7 @@ header p{
     margin-left: -1px;
 }
 
-header button{
-    padding: 15px 30px;
-    background-color: rgb(157, 65, 65);
-    color: white;
-    font-family: sans-serif;
-    border: none;
-    outline: none;
-    font-weight: 600;
 
-    border-radius: 5px;
-    font-size: 20px;
-    margin-top: 20px;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.339);
-    transition: all .3s ease;
-    cursor: pointer;
-
-
-}
-
-header button:hover{
-     background-color: rgb(220, 0, 0);
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.608);
-    transform: scale(1.02);
-    
-}
 
 .about-us{
     
@@ -550,6 +526,10 @@ header button:hover{
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
