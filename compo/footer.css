@@ -1,0 +1,97 @@
+
+footer{
+    background-color: rgba(0, 0, 65, 0.431);
+    height: 60vh;
+    padding: 0px 20px;
+   
+}
+.footer-elements{
+     padding: 80px 100px;
+    display: flex;
+}
+.footer-logo{
+    color: white;
+    margin-top: 20px;
+
+}
+.address{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: -1px;
+    line-height: 25px;
+}
+
+.footer-nav{
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+
+}
+.footer-nav h2{
+    margin-left: -5px;
+    font-size: 30px;
+    font-family: sans-serif;
+
+}
+.footer-nav ul{
+    list-style: none;
+
+}
+
+.footer-nav ul li{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    transition: all .3s ease;
+    
+}
+
+
+.footer-list{
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+
+}
+.footer-list h2{
+    cursor: pointer;
+    position: relative;
+    margin-left: -5px;
+    font-size: 30px;
+    font-family: sans-serif;
+    cursor: pointer;
+
+}
+.footer-list ul{
+    list-style: none;
+
+}
+
+.footer-list ul li{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    transition: all .3s ease;
+    
+}
+
+.footer-elements ul li:hover {
+    color: black;
+    cursor: pointer;
+    
+
+
+
+}
+
+
+.footer-elements h2{
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    color: orange;
+}
