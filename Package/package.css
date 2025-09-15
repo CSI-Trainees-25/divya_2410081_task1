@@ -174,13 +174,18 @@ header p a{
     cursor: pointer;
     box-shadow: inset 0 0 15px rgba(0, 128, 0, 0.634), 0 0 30px rgba(144, 238, 144, 0.786);
     border: 2px solid white;
+    background: transparent;
     
 
 }
 
+.book-now:active{
+    scale: .9;
+}
+
 .explore{
     margin-top: 100px;
-    background-image: url(pricing-header.jpg);
+    background-image: url(../Package/package-img/pricing-header.jpg);
     height: 50vh;
     background-position: center;
     background-size: cover;
@@ -196,7 +201,7 @@ header p a{
 .explore::before{
     content: " ";
     position: absolute;
-    background: rgba(1, 79, 162, 0.867);
+    background: rgba(1, 79, 162, 0.84);
     height: 100%;
     width: 100%;
     top: 0;

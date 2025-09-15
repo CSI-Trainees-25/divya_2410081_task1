@@ -92,6 +92,32 @@ nav ul li a:before {
     z-index: -1;
 }
 
+.nav-search{
+    background-color: black;
+    font-weight: 550;
+    color: white;
+    padding: 8px 20px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.584);
+
+    margin-left: -100px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: all .3s ease;
+
+
+}
+
+.nav-search:active{
+    scale: .8;
+}
+
+.nav-search:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.724);
+
+
+}
+
 nav ul li a:hover:before {
      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.371);
     transition: transform 0.5s;
