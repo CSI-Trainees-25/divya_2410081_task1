@@ -1,6 +1,10 @@
 .social-icons img{
     height: 24px;
 }
+
+header h3{
+    
+}
 header{
    
   background-image: url(../HomePage/homepage-images/headerImg.jpg);
@@ -15,6 +19,7 @@ header{
     
     
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
@@ -439,6 +444,7 @@ header p{
     border-radius: 20px;
     position: relative;
     padding: 10px 10px;
+    
     
 
 }
