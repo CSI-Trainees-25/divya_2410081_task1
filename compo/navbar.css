@@ -141,3 +141,67 @@ nav ul li a:hover:before {
 
 }
 
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(255, 166, 0, 0.804);
+        position: absolute;
+        top: 50px;
+        color: white; 
+        left: 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        color: white;
+        
+    }
+
+    nav ul li a{
+        font-weight: 550;
+        color: white;
+        font-size: 20px;
+        transition: all .3s ease;
+        cursor: pointer;
+
+    }
+
+    nav ul li a:hover{
+        color: black;
+
+    }
+
+    .search {
+        display: none; 
+    }
+
+    .hamburger {
+        display: block;
+        filter: drop-shadow(2px 10px 4px #b37400da);
+    }
+
+    
+}
+
